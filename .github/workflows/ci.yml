@@ -1,6 +1,7 @@
 name: CI Workflow
 
-on: push
+on:
+  push:
 
 jobs:
   build-and-test:
@@ -27,6 +28,4 @@ jobs:
 
     steps:
       - name: Deploy application
-        run: echo 'Deploying application...'
-
-
+        run: echo "Deploying application..."
